@@ -1,36 +1,66 @@
 package bol15;
 import java.util.Scanner;
+import datos.personal;
 /**
  *
  * @author sverdecadilla
  */
 public class academia {
     Scanner sc = new Scanner(System.in);
-    private String referencia;
+    public static int referencia = 2020;
+    private int ref;
     private String nome;
-    private int nota;
+    private float nota;
+    private personal alumno = new personal();
 
-    public static void numReferencia(int referencia){
-        do{
-            System.out.println("El alumno esta matriculado en "+referencia);
-            referencia++;
-        }while(referencia<=2025);
+    public academia() {
+        ref=referencia;
+        referencia++;
+    }   
+
+    public academia(int ref, String nome, int nota, String personal) {
+        this.ref = ref;
+        this.nome = nome;
+        this.nota = nota;
     }
-    
-    public void pedNome(){
-        System.out.println("Cual es el nombre del alumno");
-        nome = sc.nextLine();
+
+    public int getRef() {
+        return ref;
     }
-    
-    public void alumno(){
-        numReferencia();
-        pedNome();
-        
+
+    public String getNome() {
+        return nome;
     }
-    
+
+    public float getNota() {
+        return nota;
+    }
+
+    public personal getAlumno() {
+        return alumno;
+    }
+
+    public void setRef(int ref) {
+        this.ref = ref;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setNota(float nota) {
+        this.nota = nota;
+    }
+
+    public void setAlumno(personal alumno) {
+        this.alumno = alumno;
+    }
+
     @Override
     public String toString() {
-        return "academia{" + "referencia=" + referencia + ", nome=" + nome + ", nota=" + nota + '}';
+        return "academia{" + "sc=" + sc + ", ref=" + ref + ", nome=" + nome + ", nota=" + nota + ", alumno=" + alumno + '}';
     }
+
+    
     
 }

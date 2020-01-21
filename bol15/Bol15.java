@@ -1,5 +1,6 @@
 package bol15;
-
+import datos.personal;
+import
 /**
  *
  * @author sverdecadilla
