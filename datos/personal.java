@@ -6,9 +6,9 @@ package datos;
  */
 public class personal {
     private String telefono;
-    private char correo;
+    private String correo;
 
-    public personal(String telefono, char correo) {
+    public personal(String telefono, String correo) {
         this.telefono = telefono;
         this.correo = correo;
     }
