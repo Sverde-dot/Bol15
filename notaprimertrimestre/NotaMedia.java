@@ -2,10 +2,6 @@ package notaprimertrimestre;
 
 import java.util.Scanner;
 
-/**
- *
- * @author irodriguezsteuerberg
- */
 public class NotaMedia {
 private float teorico1,teorico2,notaPractico,num;
 private int notaBoletins, boletins,notaMedia,valor;
